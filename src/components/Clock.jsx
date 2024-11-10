@@ -17,7 +17,8 @@ const Clock = ({ bgImage = defaultBg }) => {
           />
           
           <div className="hands-container">
-            {/* Hour Hand */}
+       
+       
             <div className="hand-wrapper hour-wrapper">
               <div 
                 className="hand hour-hand"
@@ -25,7 +26,7 @@ const Clock = ({ bgImage = defaultBg }) => {
               />
             </div>
             
-            {/* Minute Hand */}
+        
             <div className="hand-wrapper minute-wrapper">
               <div 
                 className="hand minute-hand"
@@ -33,7 +34,7 @@ const Clock = ({ bgImage = defaultBg }) => {
               />
             </div>
             
-            {/* Second Hand */}
+           
             <div className="hand-wrapper second-wrapper">
               <div 
                 className="hand second-hand"
@@ -48,13 +49,13 @@ const Clock = ({ bgImage = defaultBg }) => {
 
       <div className="digital-time">
         <div className="time-display">
-          {/* Display time in digital format */}
+          
           {time.toLocaleTimeString('en-US', {
             hour12: true,
             hour: '2-digit',
             minute: '2-digit',
             second: '2-digit',
-            // fractionalSecondDigits might not be widely supported, be mindful of it
+            
             fractionalSecondDigits: 3
           })}
         </div>
